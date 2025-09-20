@@ -11,6 +11,7 @@ export default defineConfig({
     federation({
       name: "host",
       remotes: {
+        TopBar: "http://localhost:3004/assets/remoteEntry.js",
         mediastore: "http://localhost:3001/assets/remoteEntry.js",
         // frontti ja sidebar me
         front_and_sidebar: "http://localhost:3002/assets/remoteEntry.js",

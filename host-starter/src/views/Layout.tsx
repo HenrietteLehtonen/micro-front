@@ -1,4 +1,4 @@
-import TopBar from "@/components/TopBar";
+import TopBar from "TopBar/TopBar";
 // TODO: import useUserContext from mediastore mfe
 import { Outlet } from "react-router-dom";
 import { useUserContext } from "mediastore/contextHooks";
