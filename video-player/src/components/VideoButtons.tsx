@@ -1,6 +1,6 @@
-import { MediaItem } from '@sharedTypes/DBTypes';
-import { Button } from '../ui/button';
-import { LuThumbsDown, LuThumbsUp } from 'react-icons/lu';
+import { MediaItem } from "@sharedTypes/DBTypes";
+import { LuThumbsDown, LuThumbsUp } from "react-icons/lu";
+import { Button } from "./ui/button";
 
 const VideoButtons = (props: { mediaItem: MediaItem }) => {
   const { mediaItem } = props;

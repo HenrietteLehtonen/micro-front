@@ -1,0 +1,70 @@
+[
+  {
+    "owner": { "user_id": "2", "username": "ilkkamtk" },
+    "_id": "66c1079c7408d7d2c89773f2",
+    "title": "Eka",
+    "description": "Morois",
+    "type": "video",
+    "url": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlbmFtZSI6Ijc2NDc0NGI5ZjE5NTgwOTQ4MzE3MzdjNWYxNmIxOTQ0IiwidXNlcl9pZCI6MiwiaWF0IjoxNzIzOTI2NDI4fQ.gUo2O1q43X1has4AVgw-kLnb4pBmNCC2CJPYSo768cE.mp4",
+    "tags": ["koira", "söpö"],
+    "metadata": {
+      "filename": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlbmFtZSI6Ijc2NDc0NGI5ZjE5NTgwOTQ4MzE3MzdjNWYxNmIxOTQ0IiwidXNlcl9pZCI6MiwiaWF0IjoxNzIzOTI2NDI4fQ.gUo2O1q43X1has4AVgw-kLnb4pBmNCC2CJPYSo768cE.mp4",
+      "mimetype": "video/mp4",
+      "filesize": 10790268
+    },
+    "comments": [
+      {
+        "author": { "user_id": "139", "username": "ilkkamtk" },
+        "_id": "66e6fc80f4689b1721fa0e41",
+        "text": "Kommentti tähän",
+        "replies": [
+          {
+            "author": { "user_id": "139", "username": "ilkkamtk" },
+            "_id": "66e6fcb4f4689b1721fa0e47",
+            "text": "Vastaus kommenttiin",
+            "replies": ["66e6fcc9f4689b1721fa0e4e"],
+            "upvotes": [],
+            "downvotes": [],
+            "createdAt": "2024-09-15T15:26:44.569Z",
+            "__v": 1
+          }
+        ],
+        "upvotes": [],
+        "downvotes": [],
+        "createdAt": "2024-09-15T15:25:52.518Z",
+        "__v": 1
+      }
+    ],
+    "screenshots": [
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlbmFtZSI6Ijc2NDc0NGI5ZjE5NTgwOTQ4MzE3MzdjNWYxNmIxOTQ0IiwidXNlcl9pZCI6MiwiaWF0IjoxNzIzOTI2NDI4fQ.gUo2O1q43X1has4AVgw-kLnb4pBmNCC2CJPYSo768cE.mp4-thumb-1.png",
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlbmFtZSI6Ijc2NDc0NGI5ZjE5NTgwOTQ4MzE3MzdjNWYxNmIxOTQ0IiwidXNlcl9pZCI6MiwiaWF0IjoxNzIzOTI2NDI4fQ.gUo2O1q43X1has4AVgw-kLnb4pBmNCC2CJPYSo768cE.mp4-thumb-2.png",
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlbmFtZSI6Ijc2NDc0NGI5ZjE5NTgwOTQ4MzE3MzdjNWYxNmIxOTQ0IiwidXNlcl9pZCI6MiwiaWF0IjoxNzIzOTI2NDI4fQ.gUo2O1q43X1has4AVgw-kLnb4pBmNCC2CJPYSo768cE.mp4-thumb-3.png",
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlbmFtZSI6Ijc2NDc0NGI5ZjE5NTgwOTQ4MzE3MzdjNWYxNmIxOTQ0IiwidXNlcl9pZCI6MiwiaWF0IjoxNzIzOTI2NDI4fQ.gUo2O1q43X1has4AVgw-kLnb4pBmNCC2CJPYSo768cE.mp4-thumb-4.png",
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlbmFtZSI6Ijc2NDc0NGI5ZjE5NTgwOTQ4MzE3MzdjNWYxNmIxOTQ0IiwidXNlcl9pZCI6MiwiaWF0IjoxNzIzOTI2NDI4fQ.gUo2O1q43X1has4AVgw-kLnb4pBmNCC2CJPYSo768cE.mp4-thumb-5.png"
+    ],
+    "uploadedAt": "2024-08-17T20:27:08.512Z",
+    "upvotes": [],
+    "downvotes": [],
+    "__v": 9
+  },
+  {
+    "owner": { "user_id": "139", "username": "ilkkamtk" },
+    "_id": "66ddf4a44858a0c1a4cd0303",
+    "title": "Testistriimi",
+    "description": "Tonin striimi toimii https:llä",
+    "type": "live_stream",
+    "url": "playlist.m3u8",
+    "tags": ["striimi"],
+    "metadata": {
+      "filename": "https://moctobpltc-i.akamaihd.net/hls/live/571329/eight/playlist.m3u8",
+      "mimetype": "application/dash+xml",
+      "filesize": 0
+    },
+    "comments": [],
+    "screenshots": [],
+    "uploadedAt": "2024-09-08T19:01:56.126Z",
+    "upvotes": [],
+    "downvotes": [],
+    "__v": 2
+  }
+]
