@@ -1,8 +1,8 @@
 import { MediaItem } from "@sharedTypes/DBTypes";
-import VideoButtons from "./VideoButtons";
 import { useEffect, useRef } from "react";
 import ReactPlayer from "react-player/lazy";
 import { decode } from "html-entities";
+import VideoButtons from "./VideoButtons";
 
 const VideoPlayer = (props: { mediaItem: MediaItem }) => {
   const { mediaItem } = props;
