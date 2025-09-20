@@ -1,5 +1,4 @@
 import CommentArea from "@/components/comments/CommentArea";
-import VideoPlayer from "@/components/player/VideoPlayer";
 import { MediaContextType } from "@sharedTypes/DBTypes";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
@@ -7,6 +6,7 @@ import { useParams } from "react-router-dom";
 import Sidebar from "front_and_sidebar/Sidebar";
 // Import useMediaContext from mediastore mfe
 import { useMediaContext } from "mediastore/contextHooks";
+import VideoPlayer from "video_player/VideoPlayer";
 
 const Single = () => {
   const { id } = useParams();
