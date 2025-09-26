@@ -81,9 +81,11 @@ type Credentials = Pick<User, "username" | "password">;
 
 type AuthContextType = {
   user: UserWithNoPassword | null;
-  handleLogin: (credentials: Credentials) => void;
+  handleLogin: (credentials: Credentials) => Promise<void> | void;
+  // register: username, email and password
+  handleRegister: (payload: { username: string; email: string; password: string }) => Promise<void> | void;
   handleLogout: () => void;
-  handleAutoLogin: () => void;
+  handleAutoLogin: () => Promise<void> | void;
 };
 
 type MediaContextType = {

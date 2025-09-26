@@ -10,6 +10,7 @@ const UserProvider = ({ children }: { children: React.ReactNode }) => {
   const [user, setUser] = useState<UserWithNoPassword | null>(null);
   const { postLogin } = useAuthentication();
   const { getUserByToken } = useUser();
+  const { postUser } = useUser();
 
   // login, logout and autologin functions are here instead of components
   const handleLogin = async (credentials: Credentials) => {
@@ -20,6 +21,21 @@ const UserProvider = ({ children }: { children: React.ReactNode }) => {
         setUser(loginResult.user);
         // navigate('/');
       }
+    } catch (e) {
+      alert((e as Error).message);
+    }
+  };
+
+  const handleRegister = async (payload: {
+    username: string;
+    email: string;
+    password: string;
+  }) => {
+    try {
+      // create user
+      await postUser(payload);
+      // after successful registration, auto-login the user
+      await handleLogin({ username: payload.username, password: payload.password });
     } catch (e) {
       alert((e as Error).message);
     }
@@ -62,7 +78,7 @@ const UserProvider = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <UserContext.Provider
-      value={{ user, handleLogin, handleLogout, handleAutoLogin }}
+      value={{ user, handleLogin, handleRegister, handleLogout, handleAutoLogin }}
     >
       {children}
     </UserContext.Provider>

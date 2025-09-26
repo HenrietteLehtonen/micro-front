@@ -145,7 +145,7 @@ const useUser = () => {
       body: JSON.stringify(user),
     };
 
-    await fetchData<UserResponse>(
+    return await fetchData<UserResponse>(
       import.meta.env.VITE_AUTH_API + "/users",
       options
     );
