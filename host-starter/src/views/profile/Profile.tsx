@@ -1,19 +1,34 @@
-import UserInfo from "./UserInfo";
+import React, { Suspense } from "react";
 import FormSwitch from "./FormSwitch";
-// TODO: Import the useUserContex hook from the mediastore mfe
+// use user context from mediastore mfe
 import { useUserContext } from "mediastore/contextHooks";
 
-const Profile = () => {
+const RemoteProfile = React.lazy(() => import("profile/Profile"));
+
+const ProfileRoute = () => {
   const { user } = useUserContext();
-  console.log(user);
+
+  // If you want host to render local edit forms when not authenticated,
+  // keep that logic and otherwise render the remote profile when user exists.
+  if (!user) {
+    return (
+      <main className="p-4">
+        <div className="w-full max-w-3xl mx-auto">
+          <FormSwitch />
+        </div>
+      </main>
+    );
+  }
 
   return (
     <main className="p-4">
       <div className="w-full max-w-3xl mx-auto">
-        {user ? <UserInfo /> : <FormSwitch />}
+        <Suspense fallback={<div>Loading profile...</div>}>
+          <RemoteProfile />
+        </Suspense>
       </div>
     </main>
   );
 };
 
-export default Profile;
+export default ProfileRoute;

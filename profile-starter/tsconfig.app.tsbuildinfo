@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/components/profile.tsx","./src/components/profilethumbnail.tsx","./src/components/profileview.tsx","./src/components/ui/button.tsx","./src/components/ui/card.tsx","./src/components/ui/input.tsx","./src/components/ui/tooltip.tsx","./src/lib/fetchdata.ts","./src/lib/utils.ts","./src/types/remotes.d.ts"],"version":"5.9.2"}
