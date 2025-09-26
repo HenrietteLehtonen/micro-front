@@ -1,6 +1,6 @@
 # micro-front
 ## added handleRegister to shared DBTypes.ts
-[!handleRegister](./host-starter/public/images/handleRegister.png)
+[!handleRegister](/micro-front/host-starter/public/images/handleRegister.png)
 
 ## changed postUser to return response in apiHooks.ts
 [!apihooks](./host-starter/public/images/apihooks.png)
