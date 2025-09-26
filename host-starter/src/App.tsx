@@ -2,7 +2,7 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
 import Single from "./views/single/Single";
 import Profile from "./views/profile/Profile";
-import Upload from "./views/upload/Upload";
+import Upload from "upload/Upload";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Layout from "./views/Layout";
 import Home from "./views/home/Home";

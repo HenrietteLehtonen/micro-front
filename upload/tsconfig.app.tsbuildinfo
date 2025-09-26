@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/components/ui/button.tsx","./src/components/ui/card.tsx","./src/components/ui/input.tsx","./src/components/ui/label.tsx","./src/hooks/formhooks.ts","./src/lib/fetchdata.ts","./src/lib/utils.ts","./src/types/remotes.d.ts","./src/views/mediaform.tsx","./src/views/upload.tsx"],"version":"5.9.2"}

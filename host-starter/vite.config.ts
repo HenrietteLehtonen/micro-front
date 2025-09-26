@@ -16,8 +16,9 @@ export default defineConfig({
         // frontti ja sidebar me
         front_and_sidebar: "http://localhost:3002/assets/remoteEntry.js",
         // video player
-        video_player: "http://localhost:3003/assets/remoteEntry.js", 
-        profile: "http://localhost:3005/assets/remoteEntry.js"
+        video_player: "http://localhost:3003/assets/remoteEntry.js",
+        profile: "http://localhost:3005/assets/remoteEntry.js",
+        upload: "http://localhost:3006/assets/remoteEntry.js",
       },
       shared: ["react", "react-dom", "react-router-dom"],
     }),

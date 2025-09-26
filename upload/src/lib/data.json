@@ -1,0 +1,88 @@
+{
+  "_id": "60d5ec49d1d41c1e20c3d7b3",
+  "title": "Beautiful Sunset",
+  "description": "A stunning sunset over the mountains.",
+  "type": "video",
+  "url": "https://download.blender.org/peach/bigbuckbunny_movies/big_buck_bunny_1080p_h264.mov",
+  "tags": ["nature", "sunset", "mountains"],
+  "metadata": {
+    "resolution": "1080p",
+    "duration": "5 minutes",
+    "format": "mp4"
+  },
+  "uploadedAt": "2024-05-30T08:00:00Z",
+  "comments": [
+    {
+      "_id": "60d5ec49d1d41c1e20c3d7c1",
+      "text": "Amazing view!",
+      "author": {
+        "userId": "12345",
+        "username": "John Doe"
+      },
+      "replies": [
+        {
+          "_id": "60d5ec49d1d41c1e20c3d7c2",
+          "text": "Absolutely! I love it.",
+          "author": {
+            "userId": "67890",
+            "username": "Jane Smith"
+          },
+          "replies": [],
+          "createdAt": "2024-05-30T10:00:00Z",
+          "upvotes": [
+            {
+              "userId": "54321",
+              "username": "Alice Johnson"
+            }
+          ],
+          "downvotes": []
+        }
+      ],
+      "createdAt": "2024-05-30T09:00:00Z",
+      "upvotes": [
+        {
+          "userId": "54321",
+          "username": "Alice Johnson"
+        }
+      ],
+      "downvotes": []
+    },
+    {
+      "_id": "40d5ec49d1d41c1e20c3d7c2",
+      "text": "Hianoo!",
+      "author": {
+        "userId": "21334",
+        "username": "Sepi"
+      },
+      "replies": [],
+      "createdAt": "2024-05-30T09:00:00Z",
+      "upvotes": [],
+      "downvotes": [
+        {
+          "userId": "54321",
+          "username": "Alice Johnson"
+        }
+      ]
+    }
+  ],
+  "upvotes": [
+    {
+      "userId": "12345",
+      "username": "John Doe"
+    }
+  ],
+  "downvotes": [
+    {
+      "userId": "67890",
+      "username": "Jane Smith"
+    }
+  ],
+  "owner": {
+    "userId": "12345",
+    "username": "John Doe"
+  },
+  "screenshots": [
+    "https://placehold.it/380x200",
+    "http://example.com/screenshots/sunset2.png"
+  ]
+}
