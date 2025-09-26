@@ -1,7 +1,5 @@
 
-# profile-starter — Profile micro-frontend (focused README)
 
-This README documents only the profile MFE: what it exposes, how to run and preview it, and how to use it from the host. It's deliberately narrow — it does not cover the whole monorepo.
 
 ## What this package provides
 - Federation name: `profile` (declared in `vite.config.ts`)
