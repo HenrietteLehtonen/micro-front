@@ -1,4 +1,4 @@
-# micro-front
+# micro-front /valid Registration
 ## added handleRegister to shared DBTypes.ts
 ![handleRegister](./host-starter/public/images/handleRegister.png)
 
@@ -11,3 +11,4 @@ added handleRegister in UserContext.tsx and exposed it
 RegisterForm.tsx to call handleRegister and navigate to /profile
 ![registerform](./host-starter/public/images/registerform1.png)
 ![registerform](./host-starter/public/images/registerform.png)
+
