@@ -3,7 +3,10 @@ import react from "@vitejs/plugin-react-swc";
 import { defineConfig } from "vite";
 import federation from "@originjs/vite-plugin-federation";
 
+const isProd = process.env.NODE_ENV === "production";
+
 export default defineConfig({
+  base: isProd ? "/~hussaink/video_player/" : "/",
   plugins: [
     react(),
     federation({

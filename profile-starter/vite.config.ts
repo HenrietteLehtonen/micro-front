@@ -3,8 +3,11 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import federation from "@originjs/vite-plugin-federation";
 
+const isProd = process.env.NODE_ENV === "production";
+
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: isProd ? "/~hussaink/profile/" : "/",
   plugins: [
     react(),
 
@@ -18,11 +21,18 @@ export default defineConfig({
         // expose a thumbnail component
         "./ProfileThumbnail": "./src/components/ProfileThumbnail",
       },
-      remotes: {
-        // profile depends on mediastore for user context
-        mediastore: "http://localhost:3001/assets/remoteEntry.js",
-        front_and_sidebar: "http://localhost:3002/assets/remoteEntry.js",
-      },
+      remotes: isProd
+        ? {
+          mediastore:
+            "https://users.metropolia.fi/~hussaink/mediastore/assets/remoteEntry.js",
+          front_and_sidebar:
+            "https://users.metropolia.fi/~hussaink/front_and_sidebar/assets/remoteEntry.js",
+        }
+        : {
+          // profile depends on mediastore for user context
+          mediastore: "http://localhost:3001/assets/remoteEntry.js",
+          front_and_sidebar: "http://localhost:3002/assets/remoteEntry.js",
+        },
       shared: ["react", "react-dom", "react-router-dom"],
     }),
   ],

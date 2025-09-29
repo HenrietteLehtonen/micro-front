@@ -8,12 +8,19 @@ import Layout from "./views/Layout";
 import Home from "./views/home/Home";
 
 // import UserProvider from mediastore mfe
+// Providers are exposed by the mediastore remote. At runtime these become
+// federated async imports. Add runtime checks/logs so we can see if they
+// resolved correctly in production on the deployed host.
+const isProd = import.meta.env.PROD;
+const basename = isProd ? "/~hussaink/host" : "/";
+
 import { UserProvider } from "mediastore/UserContext";
 import { MediaProvider } from "mediastore/MediaContext";
 
 function App() {
   return (
-    <Router>
+    
+    <Router basename={basename}>
       <UserProvider>
         <MediaProvider>
           <Routes>

@@ -13,12 +13,32 @@ import { useUserContext } from "mediastore/contextHooks";
 
 const TopBar = () => {
   const { user } = useUserContext();
+  // Use Vite's BASE_URL so built asset paths respect the project's `base`.
+  // In production this will be something like '/~hussaink/topbar/' and in dev '/'.
+  const base = (import.meta as any).env?.BASE_URL || "/";
+  const isProd = (import.meta as any).env?.PROD === true;
+  // fallback to host's logo (where the host app lives) if topbar doesn't have its own logo uploaded
+  const hostLogoPath = '/~hussaink/host/logo.jpg';
   return (
     <header className="sticky top-0 z-40 w-full border-b bg-background">
       <div className="container flex h-16 items-center justify-between px-4 md:px-6">
         <div className="flex items-center gap-4">
           <Link to="/" className="flex items-center gap-2">
-            <img src="/logo.jpg" alt="logo" width="200" height="50" />
+            <img
+              src={`${base}logo.jpg`}
+              alt="logo"
+              width="200"
+              height="50"
+              onError={(e) => {
+                try {
+                  const img = e.currentTarget as HTMLImageElement;
+                  // If in prod, try host's logo path; otherwise fall back to the current base
+                  img.src = isProd ? hostLogoPath : `${base}logo.jpg`;
+                } catch (err) {
+                  /* ignore */
+                }
+              }}
+            />
             <span className="sr-only">Acme Inc</span>
           </Link>
         </div>
